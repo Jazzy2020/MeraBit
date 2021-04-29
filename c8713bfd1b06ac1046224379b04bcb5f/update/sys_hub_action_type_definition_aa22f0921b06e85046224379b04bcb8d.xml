@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation>This initiates transformation of the raw risk vector vuln findings data</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>37c76d25db829494748865ea13961945</copied_from>
+        <copied_from_name>Twistlock Load Data</copied_from_name>
+        <description>This initiates the transformation of the raw data loaede for a specific risk vector and subsequently populating the core tables</description>
+        <ih_action>false</ih_action>
+        <internal_name>bitsight_transform_vuln_data</internal_name>
+        <label_cache>[{"name":"{{action.datasource}}","label":"action➛DataSource","type":"action","ref":""},{"name":"{{action.impsettable}}","label":"action➛ImpSetTable","type":"action","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].load_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].xform_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>5954b9bc1bd22c18c4311f49b04bcb28</latest_snapshot>
+        <master_snapshot>f78e7c961bcae85046224379b04bcb7b</master_snapshot>
+        <name>BitSight Transform Vuln Data</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>aa22f0921b06e85046224379b04bcb8d</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>BitSight Transform Vuln Data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_aa22f0921b06e85046224379b04bcb8d</sys_update_name>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=aa22f0921b06e85046224379b04bcb8d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>aa22f0921b06e85046224379b04bcb8d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>fa2234921b06e85046224379b04bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">7a2234921b06e85046224379b04bcb0d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aa22f0921b06e85046224379b04bcb8d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>impstat</field>
+        <id>aa22f0921b06e85046224379b04bcb8d</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>7a2234921b06e85046224379b04bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_aa22f0921b06e85046224379b04bcb8d</table>
+        <value>{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].load_status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=aa22f0921b06e85046224379b04bcb8d^sys_idNOT INb222f0921b06e85046224379b04bcbda"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</action>
+        <cid>7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b222f0921b06e85046224379b04bcbda</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b222f0921b06e85046224379b04bcbda"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b222f0921b06e85046224379b04bcbda</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>b22234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b222f0921b06e85046224379b04bcbda</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>ba2234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:40</sys_updated_on>
+        <value>try {
+    var xform_status = true;
+    dsOBJ = inputs.datasource;
+	var dcRef = new GlideRecord('sys_data_source');
+    var gl = new global.GSLog("sn_vul.usb.logging.verbosity", "BitSightImport - XformAtt ");
+  
+	dcRef.addEncodedQuery('sys_id=' + dsOBJ.sys_id + '^RLQUERYsys_import_set.data_source,&gt;=1^state=loaded^ENDRLQUERY');
+	dcRef.query();
+
+    while(dcRef.next()) {
+		var processor = new global.BitSightImportReportProcessor();
+		var mapSource = processor.getXformMapBySysID(dcRef.import_set_table_name);
+		if (mapSource != "undefined") processor.XformAtt(dcRef, mapSource);
+	    else throw new Error("***** No Transform Map was found. *****");
+	}
+}
+catch(e) {
+    xform_status = false;
+	gl.logError(gs.getMessage('sn_vul',  "BitSightImport - XformAtt " +  e));
+}   </value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b222f0921b06e85046224379b04bcbda"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>7a2234921b06e85046224379b04bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:10:03</sys_created_on>
+        <sys_id>d556f4921b86e85046224379b04bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:10:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource_ref</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>f62234921b06e85046224379b04bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>322234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b222f0921b06e85046224379b04bcbda^sys_idNOT IN0156f4921b86e85046224379b04bcba7"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b222f0921b06e85046224379b04bcbda</model>
+        <model_id>b222f0921b06e85046224379b04bcbda</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:10:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0156f4921b86e85046224379b04bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:10:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b222f0921b06e85046224379b04bcbda^sys_idNOT IN647c38521b8ae85046224379b04bcbb8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f2a06199-9122-4c04-a7e7-4d50a7d209ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>xform_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>xform_status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">b222f0921b06e85046224379b04bcbda</model>
+        <model_id>b222f0921b06e85046224379b04bcbda</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b222f0921b06e85046224379b04bcbda</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:36:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>647c38521b8ae85046224379b04bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:36:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=aa22f0921b06e85046224379b04bcb8d^sys_idNOT IN6222f0921b06e85046224379b04bcb93"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c9e153fc-5e4f-4235-8351-a5e422769e01</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"BS WebAppHdrs Intg","value":"aa9cbbb91b8aac1046224379b04bcba6"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DataSource</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</model>
+        <model_id>aa22f0921b06e85046224379b04bcb8d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_aa22f0921b06e85046224379b04bcb8d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_data_source">sys_data_source</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6222f0921b06e85046224379b04bcb93</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:41:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=aa22f0921b06e85046224379b04bcb8d^sys_idNOT IN7a2234921b06e85046224379b04bcb0d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b3db0d3e-7c4e-4a09-baf5-542e33eed29b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>impstat</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>ImpStat</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</model>
+        <model_id>aa22f0921b06e85046224379b04bcb8d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_aa22f0921b06e85046224379b04bcb8d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7a2234921b06e85046224379b04bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:54:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=aa22f0921b06e85046224379b04bcb8d^sys_idNOT INb222f0921b06e85046224379b04bcbda"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</action>
+        <cid>7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b222f0921b06e85046224379b04bcbda</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b222f0921b06e85046224379b04bcbda"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b222f0921b06e85046224379b04bcbda</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>b22234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b222f0921b06e85046224379b04bcbda</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>ba2234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:40</sys_updated_on>
+        <value>try {
+    var xform_status = true;
+    dsOBJ = inputs.datasource;
+	var dcRef = new GlideRecord('sys_data_source');
+    var gl = new global.GSLog("sn_vul.usb.logging.verbosity", "BitSightImport - XformAtt ");
+  
+	dcRef.addEncodedQuery('sys_id=' + dsOBJ.sys_id + '^RLQUERYsys_import_set.data_source,&gt;=1^state=loaded^ENDRLQUERY');
+	dcRef.query();
+
+    while(dcRef.next()) {
+		var processor = new global.BitSightImportReportProcessor();
+		var mapSource = processor.getXformMapBySysID(dcRef.import_set_table_name);
+		if (mapSource != "undefined") processor.XformAtt(dcRef, mapSource);
+	    else throw new Error("***** No Transform Map was found. *****");
+	}
+}
+catch(e) {
+    xform_status = false;
+	gl.logError(gs.getMessage('sn_vul',  "BitSightImport - XformAtt " +  e));
+}   </value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b222f0921b06e85046224379b04bcbda"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>7a2234921b06e85046224379b04bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:10:03</sys_created_on>
+        <sys_id>d556f4921b86e85046224379b04bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:10:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource_ref</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>f62234921b06e85046224379b04bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b222f0921b06e85046224379b04bcbda</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_id>322234921b06e85046224379b04bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b222f0921b06e85046224379b04bcbda^sys_idNOT IN0156f4921b86e85046224379b04bcba7"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b222f0921b06e85046224379b04bcbda</model>
+        <model_id>b222f0921b06e85046224379b04bcbda</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b222f0921b06e85046224379b04bcbda</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:10:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0156f4921b86e85046224379b04bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:10:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b222f0921b06e85046224379b04bcbda^sys_idNOT IN647c38521b8ae85046224379b04bcbb8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f2a06199-9122-4c04-a7e7-4d50a7d209ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>xform_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>xform_status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">b222f0921b06e85046224379b04bcbda</model>
+        <model_id>b222f0921b06e85046224379b04bcbda</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b222f0921b06e85046224379b04bcbda</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:36:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>647c38521b8ae85046224379b04bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:36:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_aa22f0921b06e85046224379b04bcb8d^sys_idNOT INe622f0921b06e85046224379b04bcbd7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>datasource</element>
+        <help/>
+        <hint/>
+        <label>DataSource</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_aa22f0921b06e85046224379b04bcb8d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e622f0921b06e85046224379b04bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DataSource</sys_name>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_aa22f0921b06e85046224379b04bcb8d^sys_idNOT IN3a2234921b06e85046224379b04bcb13"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>impstat</element>
+        <help/>
+        <hint/>
+        <label>ImpStat</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_aa22f0921b06e85046224379b04bcb8d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 16:51:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3a2234921b06e85046224379b04bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ImpStat</sys_name>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=aa22f0921b06e85046224379b04bcb8d^sys_idNOT IN409ebc961bcae85046224379b04bcb81"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"409ebc961bcae85046224379b04bcb81","name":"plan"}}</plan>
+        <snapshot>a9f863fe1b8a64d046224379b04bcb39</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:46:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>409ebc961bcae85046224379b04bcb81</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-04 19:27:29</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation>This initiates transformation of the raw risk vector vuln findings data</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This initiates the transformation of the raw data loaede for a specific risk vector and subsequently populating the core tables</description>
+        <internal_name>bitsight_transform_vuln_data</internal_name>
+        <label_cache>[{"name":"{{action.datasource}}","label":"action➛DataSource","type":"action","ref":""},{"name":"{{action.impsettable}}","label":"action➛ImpSetTable","type":"action","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].load_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].xform_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>BitSight Transform Vuln Data</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="BitSight Transform Vuln Data">aa22f0921b06e85046224379b04bcb8d</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f78e7c961bcae85046224379b04bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=f78e7c961bcae85046224379b04bcb7b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f78e7c961bcae85046224379b04bcb7b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>778e7c961bcae85046224379b04bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">f38e7c961bcae85046224379b04bcbac</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f78e7c961bcae85046224379b04bcb7b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>impstat</field>
+        <id>f78e7c961bcae85046224379b04bcb7b</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>f38e7c961bcae85046224379b04bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f78e7c961bcae85046224379b04bcb7b</table>
+        <value>{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].load_status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f78e7c961bcae85046224379b04bcb7b^sys_idNOT IN7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BitSight Transform Vuln Data">f78e7c961bcae85046224379b04bcb7b</action>
+        <cid>7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7b8e7c961bcae85046224379b04bcb94</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7b8e7c961bcae85046224379b04bcb94</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>bb8e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:45</sys_updated_on>
+        <value>try {
+    var xform_status = true;
+    dsOBJ = inputs.datasource;
+	var dcRef = new GlideRecord('sys_data_source');
+    var gl = new global.GSLog("sn_vul.usb.logging.verbosity", "BitSightImport - XformAtt ");
+  
+	dcRef.addEncodedQuery('sys_id=' + dsOBJ.sys_id + '^RLQUERYsys_import_set.data_source,&gt;=1^state=loaded^ENDRLQUERY');
+	dcRef.query();
+
+    while(dcRef.next()) {
+		var processor = new global.BitSightImportReportProcessor();
+		var mapSource = processor.getXformMapBySysID(dcRef.import_set_table_name);
+		if (mapSource != "undefined") processor.XformAtt(dcRef, mapSource);
+	    else throw new Error("***** No Transform Map was found. *****");
+	}
+}
+catch(e) {
+    xform_status = false;
+	gl.logError(gs.getMessage('sn_vul',  "BitSightImport - XformAtt " +  e));
+}   </value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7b8e7c961bcae85046224379b04bcb94</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>f78e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>b38e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>378e7c961bcae85046224379b04bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7b8e7c961bcae85046224379b04bcb94</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>778e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7b8e7c961bcae85046224379b04bcb94^sys_idNOT IN3b8e7c961bcae85046224379b04bcb97"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>datasource</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">7b8e7c961bcae85046224379b04bcb94</model>
+        <model_id>7b8e7c961bcae85046224379b04bcb94</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7b8e7c961bcae85046224379b04bcb94</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3b8e7c961bcae85046224379b04bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7b8e7c961bcae85046224379b04bcb94^sys_idNOT INff8e7c961bcae85046224379b04bcb9e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f2a06199-9122-4c04-a7e7-4d50a7d209ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>xform_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>xform_status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">7b8e7c961bcae85046224379b04bcb94</model>
+        <model_id>7b8e7c961bcae85046224379b04bcb94</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_7b8e7c961bcae85046224379b04bcb94</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff8e7c961bcae85046224379b04bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=f78e7c961bcae85046224379b04bcb7b^sys_idNOT INf78e7c961bcae85046224379b04bcb7c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c9e153fc-5e4f-4235-8351-a5e422769e01</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"BS WebAppHdrs Intg","value":"aa9cbbb91b8aac1046224379b04bcba6"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DataSource</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BitSight Transform Vuln Data">f78e7c961bcae85046224379b04bcb7b</model>
+        <model_id>f78e7c961bcae85046224379b04bcb7b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f78e7c961bcae85046224379b04bcb7b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_data_source">sys_data_source</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f78e7c961bcae85046224379b04bcb7c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=f78e7c961bcae85046224379b04bcb7b^sys_idNOT INf38e7c961bcae85046224379b04bcbac"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b3db0d3e-7c4e-4a09-baf5-542e33eed29b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>impstat</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>ImpStat</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="BitSight Transform Vuln Data">f78e7c961bcae85046224379b04bcb7b</model>
+        <model_id>f78e7c961bcae85046224379b04bcb7b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f78e7c961bcae85046224379b04bcb7b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f38e7c961bcae85046224379b04bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=f78e7c961bcae85046224379b04bcb7b^sys_idNOT IN7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BitSight Transform Vuln Data">f78e7c961bcae85046224379b04bcb7b</action>
+        <cid>7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7b8e7c961bcae85046224379b04bcb94</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7b8e7c961bcae85046224379b04bcb94</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>bb8e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:05:45</sys_updated_on>
+        <value>try {
+    var xform_status = true;
+    dsOBJ = inputs.datasource;
+	var dcRef = new GlideRecord('sys_data_source');
+    var gl = new global.GSLog("sn_vul.usb.logging.verbosity", "BitSightImport - XformAtt ");
+  
+	dcRef.addEncodedQuery('sys_id=' + dsOBJ.sys_id + '^RLQUERYsys_import_set.data_source,&gt;=1^state=loaded^ENDRLQUERY');
+	dcRef.query();
+
+    while(dcRef.next()) {
+		var processor = new global.BitSightImportReportProcessor();
+		var mapSource = processor.getXformMapBySysID(dcRef.import_set_table_name);
+		if (mapSource != "undefined") processor.XformAtt(dcRef, mapSource);
+	    else throw new Error("***** No Transform Map was found. *****");
+	}
+}
+catch(e) {
+    xform_status = false;
+	gl.logError(gs.getMessage('sn_vul',  "BitSightImport - XformAtt " +  e));
+}   </value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7b8e7c961bcae85046224379b04bcb94</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>f78e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7b8e7c961bcae85046224379b04bcb94"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>b38e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>datasource</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>378e7c961bcae85046224379b04bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7b8e7c961bcae85046224379b04bcb94</table>
+        <value>{{action.datasource}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>7b8e7c961bcae85046224379b04bcb94</id>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_id>778e7c961bcae85046224379b04bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7b8e7c961bcae85046224379b04bcb94^sys_idNOT IN3b8e7c961bcae85046224379b04bcb97"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>datasource</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>datasource</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">7b8e7c961bcae85046224379b04bcb94</model>
+        <model_id>7b8e7c961bcae85046224379b04bcb94</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7b8e7c961bcae85046224379b04bcb94</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3b8e7c961bcae85046224379b04bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7b8e7c961bcae85046224379b04bcb94^sys_idNOT INff8e7c961bcae85046224379b04bcb9e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f2a06199-9122-4c04-a7e7-4d50a7d209ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>xform_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>xform_status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">7b8e7c961bcae85046224379b04bcb94</model>
+        <model_id>7b8e7c961bcae85046224379b04bcb94</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_7b8e7c961bcae85046224379b04bcb94</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff8e7c961bcae85046224379b04bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f78e7c961bcae85046224379b04bcb7b^sys_idNOT IN7f8e7c961bcae85046224379b04bcb91"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>datasource</element>
+        <help/>
+        <hint/>
+        <label>DataSource</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f78e7c961bcae85046224379b04bcb7b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7f8e7c961bcae85046224379b04bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DataSource</sys_name>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f78e7c961bcae85046224379b04bcb7b^sys_idNOT INf38e7c961bcae85046224379b04bcbbe"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>impstat</element>
+        <help/>
+        <hint/>
+        <label>ImpStat</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f78e7c961bcae85046224379b04bcb7b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-02 17:45:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f38e7c961bcae85046224379b04bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ImpStat</sys_name>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

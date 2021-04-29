@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="BS SSL Config Intg" max_length="40" name="x_usbna_bs_sslcfg" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=affects_rating" label="affects_rating" max_length="40" name="u_affects_rating" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=assets" label="assets" max_length="200" name="u_assets" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=asset_overrides" label="asset_overrides" max_length="40" name="u_asset_overrides" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=comments" label="comments" max_length="40" name="u_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=details" label="details" max_length="8000" name="u_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=duration" label="duration" max_length="40" name="u_duration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=evidence_key" label="evidence_key" max_length="40" name="u_evidence_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=first_seen" label="first_seen" max_length="10" name="u_first_seen" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=last_seen" label="last_seen" max_length="10" name="u_last_seen" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=related_findings" label="related_findings" max_length="40" name="u_related_findings" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="remaining_decay" max_length="40" name="u_remaining_decay" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=risk_category" label="risk_category" max_length="40" name="u_risk_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=risk_vector" label="risk_vector" max_length="40" name="u_risk_vector" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=risk_vector_label" label="risk_vector_label" max_length="40" name="u_risk_vector_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=rolledup_observation_id" label="rolledup_observation_id" max_length="40" name="u_rolledup_observation_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=severity" label="severity" max_length="40" name="u_severity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=severity_category" label="severity_category" max_length="40" name="u_severity_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=tags" label="tags" max_length="40" name="u_tags" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=temporary_id" label="temporary_id" max_length="100" name="u_temporary_id" type="string"/>
+    </element>
+</database>

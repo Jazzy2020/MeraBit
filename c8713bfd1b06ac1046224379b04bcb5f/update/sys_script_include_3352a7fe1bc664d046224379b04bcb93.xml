@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_usbna_bs.BitSightSubflowTrigger</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Driver to initiate the BitSight Risk Vector specific vulnerabilities process</description>
+        <name>BitSightSubflowTrigger</name>
+        <script><![CDATA[var BitSightSubflowTrigger = Class.create();
+BitSightSubflowTrigger.prototype = {
+    initialize: function() {
+
+        this.RiskVectorObj = {
+            "open_ports": [{
+                "datasource": "46ecf3bd1b8aac1046224379b04bcb83",
+                "credalias": "eee57aa61b8ea89046224379b04bcb09",
+                "impsettable": "x_usbna_bs_openport",
+                "riskvector": "open_ports",
+                "filename": "bs_op_vulns.json"
+            }],
+            "ssl_certs": [{
+                "datasource": "f66d77711bcaac1046224379b04bcb5b",
+                "credalias": "eee57aa61b8ea89046224379b04bcb09",
+                "impsettable": "x_usbna_bs_sslcert",
+                "riskvector": "ssl_certificates",
+                "filename": "bs_sslcs_vulns.json"
+            }],
+            "ssl_conf": [{
+                "datasource": "704db7711bcaac1046224379b04bcbc7",
+                "credalias": "eee57aa61b8ea89046224379b04bcb09",
+                "impsettable": "x_usbna_bs_sslcfg",
+                "riskvector": "ssl_configurations",
+                "filename": "bs_sslcf_vulns.json"
+            }],
+            "app_sec": [{
+                "datasource": "aa9cbbb91b8aac1046224379b04bcba6",
+                "credalias": "eee57aa61b8ea89046224379b04bcb09",
+                "impsettable": "x_usbna_bs_apphdr",
+                "riskvector": "application_security",
+                "filename": "bs_wah_vulns.json"
+            }]
+        };
+    },
+    /*************************************************************
+    GSLog capability to log error, info etc
+    call example: var l = this._logger();
+    more info: /kb_view.do?sysparm_article=KB0193916
+    **************************************************************/
+    _logger: function() {
+        var l = new global.GSLog("sn_vul.usb.logging.verbosity", "BitSightSubflowTrigger");
+        return l;
+    },
+
+    /*****************************************************************************************
+    @param1 - type, acceptable inputs are Site Object
+    main function to execute the integration, reliance on the following p-functions
+    _logger
+    _isActive
+    _siteExecArrObj
+     _triggerSubflow
+    ******************************************************************************************/
+    executeInt: function() {
+        var l = this._logger();
+
+        try {
+            if (this._isActive() == "true") {
+                var subflow;
+                typeObj = this._siteExecArrObj();
+                subflow = "x_usbna_bs.bitsight_site_vulns_process";
+
+                for (var i in typeObj) {
+                    var inputs = typeObj[i];
+                    l.logInfo(gs.getMessage('sn_vul', "BIT SiGHT LOG - typeObj - "));
+                    this._triggerSubflow(subflow, inputs);
+                }
+            } else {
+                throw 'integration inactive, specify "x_usbna_bs.bitsight_active".';
+            }
+        } catch (e) {
+            var ex = e.message;
+            l.logError(gs.getMessage('sn_vul', ex));
+        }
+    },
+
+    /**************************************************************************
+    @param1 - subflow to be triggered, include <scope>.<name>
+    @param2 - inputs object for subflow to injest
+    triggers subflow w/ inputs using the new api runner for paris
+    ***************************************************************************/
+    _triggerSubflow: function(subflow, inputs) {
+        var l = this._logger();
+
+        try {
+            sn_fd.FlowAPI.getRunner().subflow(subflow).withInputs(inputs).inForeground().timeout(1200000).run();
+        } catch (e) {
+            var ex = e.message;
+            l.logError(gs.getMessage('sn_vul', ex));
+        }
+    },
+    /***********************************************************************
+     function to return site execution order and object content for the run
+     ***********************************************************************/
+    _siteExecArrObj: function() {
+        var obj = {};
+        var objAr = [];
+        for (var i in this.RiskVectorObj) {
+            for (var j = 0; j < this.RiskVectorObj[i].length; j++) {
+                obj = {};
+                obj["datasource"] = this._getDataSourceGr(this.RiskVectorObj[i][j].datasource);
+                obj["credalias"] = this._bsGetAliasGr(this.RiskVectorObj[i][j].credalias);
+                obj["impsettable"] = this.RiskVectorObj[i][j].impsettable;
+                obj["riskvector"] = this.RiskVectorObj[i][j].riskvector;
+                obj["filename"] = this.RiskVectorObj[i][j].filename;
+                obj["httptimeout"] = 10000;
+                objAr.push(obj);
+            }
+        }
+        return objAr;
+    },
+    /*********************************************
+    @param1 - Datasource sys_id 
+    returns data source glide record object
+    **********************************************/
+    _getDataSourceGr: function(ds) {
+
+        var dsGr = new GlideRecord('sys_data_source');
+        dsGr.get(ds);
+        return dsGr;
+    },
+    /**********************************************
+    @param1 - Credential Alias sys_id
+    returns alias glide record object
+    ***********************************************/
+    _bsGetAliasGr: function(id) {
+        var grConnAlias = new GlideRecord('sys_alias');
+        grConnAlias.get(id);
+        return grConnAlias;
+    },
+    /******************************************************************************************
+    function to return the system property for the bitsight integration 
+	whether it is active or not in order to control the execution of the integration
+    *******************************************************************************************/
+    _isActive: function() {
+        var a = gs.getProperty('x_usbna_bs.bitsight_active');
+        return a;
+    },
+
+    type: 'BitSightSubflowTrigger'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>vxsrin2</sys_created_by>
+        <sys_created_on>2021-02-04 19:07:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3352a7fe1bc664d046224379b04bcb93</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>BitSightSubflowTrigger</sys_name>
+        <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+        <sys_update_name>sys_script_include_3352a7fe1bc664d046224379b04bcb93</sys_update_name>
+        <sys_updated_by>vxsrin2</sys_updated_by>
+        <sys_updated_on>2021-02-10 16:51:18</sys_updated_on>
+    </sys_script_include>
+</record_update>
