@@ -13,7 +13,6 @@
         <ih_action>true</ih_action>
         <internal_name>bitsight_site_vuln_ratings_download</internal_name>
         <label_cache>[{"name":"{{action.hostinfo}}","label":"action➛HostInfo","type":"action","ref":""},{"name":"{{action.connection_alias}}","label":"action➛Connection Alias","type":"action","ref":"sys_alias"},{"name":"{{action.datasource}}","label":"action➛DataSource","type":"action","ref":""},{"name":"{{action.connectsrc}}","label":"action➛ConnectSrc","type":"action","ref":""},{"name":"{{action.restmsg}}","label":"action➛RestMsg","type":"action","ref":""},{"name":"{{action.postfix}}","label":"action➛PostFix","type":"action","ref":""},{"name":"{{action.filename}}","label":"action➛FileName","type":"action","ref":""},{"name":"{{action.connectalias}}","label":"action➛ConnectAlias","type":"action","ref":""},{"name":"{{action.httptimeout}}","label":"action➛HttpTimeOut","type":"action","ref":""},{"name":"{{action.riskvector}}","label":"action➛RiskVector","type":"action","ref":""},{"name":"{{action.credentialalias}}","label":"action➛CredentialAlias","type":"action","ref":""},{"name":"{{step[295c53c0-d832-4c39-8691-5ce9fd61879e].procsuccess}}","label":"step➛Script step➛ProcSuccess","type":"step","ref":""},{"name":"{{step[145abe21-7a0e-40bf-932c-067ffe1f3a2c].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[84492a34-b9d8-4b0f-a899-409c52ec15f0].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[84492a34-b9d8-4b0f-a899-409c52ec15f0].loadstatus}}","label":"step➛Script step➛LoadStatus","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>09ad55fc1b16e818c4311f49b04bcb13</latest_snapshot>
         <master_snapshot>d527a8ca1b06205046224379b04bcbc3</master_snapshot>
         <name>BitSight Site Vuln Ratings Download</name>
         <natlang/>
@@ -2079,7 +2078,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_50e4e40a1bc2205046224379b04bcb46_credentialalias_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 22:17:52</sys_updated_on>
         <url/>
@@ -2104,7 +2103,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_50e4e40a1bc2205046224379b04bcb46_filename_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:15:19</sys_updated_on>
         <url/>
@@ -2129,7 +2128,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_50e4e40a1bc2205046224379b04bcb46_riskvector_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 20:19:01</sys_updated_on>
         <url/>
@@ -2154,7 +2153,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_50e4e40a1bc2205046224379b04bcb46_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:15:19</sys_updated_on>
         <url/>
@@ -2179,7 +2178,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_50e4e40a1bc2205046224379b04bcb46_httptimeout_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:15:19</sys_updated_on>
         <url/>
@@ -2205,7 +2204,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_50e4e40a1bc2205046224379b04bcb46_process_status_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 15:10:26</sys_updated_on>
         <url/>
@@ -4310,7 +4309,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d527a8ca1b06205046224379b04bcbc3_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:25:13</sys_updated_on>
         <url/>
@@ -4335,7 +4334,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d527a8ca1b06205046224379b04bcbc3_credentialalias_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 22:19:08</sys_updated_on>
         <url/>
@@ -4360,7 +4359,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d527a8ca1b06205046224379b04bcbc3_riskvector_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 22:12:21</sys_updated_on>
         <url/>
@@ -4385,7 +4384,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d527a8ca1b06205046224379b04bcbc3_httptimeout_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:25:13</sys_updated_on>
         <url/>
@@ -4410,7 +4409,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d527a8ca1b06205046224379b04bcbc3_filename_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:25:13</sys_updated_on>
         <url/>
@@ -4436,10 +4435,14 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d527a8ca1b06205046224379b04bcbc3_process_status_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:46:09</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>50e4e40a1bc2205046224379b04bcb46</sys_id>
+        <latest_snapshot>d527a8ca1b06205046224379b04bcbc3</latest_snapshot>
+    </sys_hub_action_type_definition>
 </record_update>

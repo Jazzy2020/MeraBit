@@ -13,7 +13,6 @@
         <ih_action>false</ih_action>
         <internal_name>bitsight_transform_vuln_data</internal_name>
         <label_cache>[{"name":"{{action.datasource}}","label":"action➛DataSource","type":"action","ref":""},{"name":"{{action.impsettable}}","label":"action➛ImpSetTable","type":"action","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].load_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""},{"name":"{{step[7dd6cb03-bf8b-4dc2-9fca-3c1f0328ee70].xform_status}}","label":"step➛Script step➛xform_status","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>5954b9bc1bd22c18c4311f49b04bcb28</latest_snapshot>
         <master_snapshot>f78e7c961bcae85046224379b04bcb7b</master_snapshot>
         <name>BitSight Transform Vuln Data</name>
         <natlang/>
@@ -845,7 +844,7 @@ catch(e) {
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_aa22f0921b06e85046224379b04bcb8d_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
         <url/>
@@ -871,7 +870,7 @@ catch(e) {
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_aa22f0921b06e85046224379b04bcb8d_impstat_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 16:51:51</sys_updated_on>
         <url/>
@@ -1718,7 +1717,7 @@ catch(e) {
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f78e7c961bcae85046224379b04bcb7b_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
         <url/>
@@ -1744,10 +1743,14 @@ catch(e) {
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f78e7c961bcae85046224379b04bcb7b_impstat_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:45:59</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>aa22f0921b06e85046224379b04bcb8d</sys_id>
+        <latest_snapshot>f78e7c961bcae85046224379b04bcb7b</latest_snapshot>
+    </sys_hub_action_type_definition>
 </record_update>

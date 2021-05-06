@@ -13,14 +13,14 @@
         <sys_created_by>vxsrin2</sys_created_by>
         <sys_created_on>2021-02-01 18:31:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>fb6ffff51b0eac1046224379b04bcb68</sys_id>
+        <sys_id>f26334df1b7f685046224379b04bcb84</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_usbna_bs_sslcfg</sys_name>
         <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name>ua_table_licensing_config_fb6ffff51b0eac1046224379b04bcb68</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_f26334df1b7f685046224379b04bcb84</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 18:31:43</sys_updated_on>
     </ua_table_licensing_config>

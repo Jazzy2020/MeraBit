@@ -13,7 +13,6 @@
         <ih_action>false</ih_action>
         <internal_name>bitsight_remove_attachment_files_from_data_source</internal_name>
         <label_cache>[{"name":"{{action.data_source}}","label":"action➛Data Source","type":"action","ref":""},{"name":"{{action.import_set_table_name}}","label":"action➛Import set table name","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>e3f3f9121b0a6c5046224379b04bcb5a</latest_snapshot>
         <master_snapshot>1b94a0861bc2205046224379b04bcb4e</master_snapshot>
         <name>BitSight Remove Attachment Files from Data Source</name>
         <natlang/>
@@ -806,7 +805,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c4a3e44e1b82205046224379b04bcbe0_import_set_table_name_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:09:50</sys_updated_on>
         <url/>
@@ -831,7 +830,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c4a3e44e1b82205046224379b04bcbe0_data_source_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:09:50</sys_updated_on>
         <url/>
@@ -1663,7 +1662,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1b94a0861bc2205046224379b04bcb4e_data_source_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:14:09</sys_updated_on>
         <url/>
@@ -1688,10 +1687,14 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1b94a0861bc2205046224379b04bcb4e_import_set_table_name_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:14:09</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>c4a3e44e1b82205046224379b04bcbe0</sys_id>
+        <latest_snapshot>1b94a0861bc2205046224379b04bcb4e</latest_snapshot>
+    </sys_hub_action_type_definition>
 </record_update>

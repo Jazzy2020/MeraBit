@@ -12,7 +12,6 @@
         <description>SubFlow to kickoff the downloading and processing of  externally facing USB sites related vulnerabilities</description>
         <internal_name>bitsight_site_vulns_process</internal_name>
         <label_cache>[{"name":"3e225e69-85ab-4ddd-bbe3-9bb2fa2dc806.impstat","label":"4➛ImpStat","reference_display":"ImpStat","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b3db0d3e-7c4e-4a09-baf5-542e33eed29b"}},{"name":"subflow.riskvector","label":"Input➛RiskVector","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7e314052-0cfe-4b49-8ad1-cea73217a46c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.filename","label":"Input➛FileName","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7ecb9ef2-0e1e-4a73-88f9-8b70984926c8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"47716f6f-79f9-4214-ae4a-5964799d1c9f.process_status","label":"2➛process_status","reference_display":"process_status","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9e546332-7764-424c-90cd-7971cdf723d2"}},{"name":"cb9721ed-89db-4ad2-9e9b-b3526aae338d.process_status","label":"2➛process_status","reference_display":"process_status","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9e546332-7764-424c-90cd-7971cdf723d2"}},{"name":"subflow.postfix","label":"Input➛PostFix","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b22c2dbd-6950-470f-bc16-64c2de94c6ae"}},{"name":"subflow.datasource","label":"Input➛Datasource","reference":"sys_data_source","reference_display":"Data Source","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"59a6052c-97e2-4bdb-b9c7-354d8bc4884c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.connectalias_2","label":"Input➛connectalias_2","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":""},{"name":"subflow.impsettable","label":"Input➛ImpSetTable","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b65fc529-6872-47f9-a551-9003e589e631","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.restmsg","label":"Input➛restmsg","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.connectsrc","label":"Input➛connectsrc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.httptimeout","label":"Input➛httptimeout","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"124142e8-ddf4-4c9c-8925-9aff305c64e2.hostinfo","label":"2➛HostInfo","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"124142e8-ddf4-4c9c-8925-9aff305c64e2.process_status","label":"2➛process_status","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7c9eac0-e159-4e40-9a7c-fbb6cbcf3c0b.impstat","label":"6➛ImpStat","reference_display":"ImpStat","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"fc49df4c-a25e-4332-a249-2788c15c3ae0.process_status","label":"3.1➛process_status","reference_display":"process_status","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"358f1ec4-4a72-45fb-905d-1bf0681064cb.process_status","label":"2.1➛process_status","reference_display":"process_status","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}},{"name":"50afed46-efd5-4200-927e-711740842d5c.hostinfo","label":"1➛HostInfo","reference_display":"HostInfo","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"50afed46-efd5-4200-927e-711740842d5c.process_status","label":"1➛process_status","reference_display":"process_status","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f31b43e5-ebc1-48bd-9b2b-38207ad470cd.process_status","label":"2➛process_status","reference_display":"process_status","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9572e939-3cdb-41b3-aaa4-18bb374c828c"}},{"name":"f31b43e5-ebc1-48bd-9b2b-38207ad470cd.hostinfo","label":"2➛HostInfo","reference_display":"HostInfo","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9d77a180-55ea-4aad-a252-a806f6c9f709"}},{"name":"77edba78-9856-4ad0-9758-25432b667e8f.process_status","label":"4➛process_status","reference_display":"process_status","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9e546332-7764-424c-90cd-7971cdf723d2"}},{"name":"1f404dd9-cea7-4988-9aa0-1515d3abbf83.impstat","label":"4➛ImpStat","reference_display":"ImpStat","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"subflow.credalias","label":"Input➛CredAlias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"53f39c01-0443-43ef-8a2f-ee436f538168","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
-        <latest_snapshot>a4ae301a1bcae85046224379b04bcb34</latest_snapshot>
         <master_snapshot>a4ae301a1bcae85046224379b04bcb34</master_snapshot>
         <name>BitSight Site Vulns Process</name>
         <natlang/>
@@ -2024,7 +2023,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_riskvector_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 22:28:48</sys_updated_on>
         <url/>
@@ -2049,7 +2048,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_filename_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-04 13:54:00</sys_updated_on>
         <url/>
@@ -2074,7 +2073,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:06:22</sys_updated_on>
         <url/>
@@ -2099,7 +2098,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_httptimeout_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:06:22</sys_updated_on>
         <url/>
@@ -2124,7 +2123,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_impsettable_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-01 21:06:22</sys_updated_on>
         <url/>
@@ -2149,7 +2148,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49d224c61b82205046224379b04bcbd4_credalias_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-03 22:29:44</sys_updated_on>
         <url/>
@@ -3919,7 +3918,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_datasource_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:46:19</sys_updated_on>
         <url/>
@@ -3944,7 +3943,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_impsettable_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:46:20</sys_updated_on>
         <url/>
@@ -3969,7 +3968,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_httptimeout_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-02 17:46:20</sys_updated_on>
         <url/>
@@ -3994,7 +3993,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_credalias_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-04 13:54:11</sys_updated_on>
         <url/>
@@ -4019,7 +4018,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_filename_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-04 13:54:11</sys_updated_on>
         <url/>
@@ -4044,10 +4043,14 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a4ae301a1bcae85046224379b04bcb34_riskvector_en</sys_update_name>
         <sys_updated_by>vxsrin2</sys_updated_by>
         <sys_updated_on>2021-02-04 13:54:10</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>49d224c61b82205046224379b04bcbd4</sys_id>
+        <latest_snapshot>a4ae301a1bcae85046224379b04bcb34</latest_snapshot>
+    </sys_hub_flow>
 </record_update>

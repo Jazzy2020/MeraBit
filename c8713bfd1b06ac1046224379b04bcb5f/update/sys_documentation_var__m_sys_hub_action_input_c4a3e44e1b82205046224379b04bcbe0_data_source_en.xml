@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="data_source" label="Data Source" language="en" table="var__m_sys_hub_action_input_c4a3e44e1b82205046224379b04bcbe0">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>data_source</element>
+            <help/>
+            <hint/>
+            <label>Data Source</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_c4a3e44e1b82205046224379b04bcbe0</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>vxsrin2</sys_created_by>
+            <sys_created_on>2021-02-01 21:09:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>44a3ac4e1b82205046224379b04bcb63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Data Source</sys_name>
+            <sys_package display_value="BitSight" source="x_usbna_bs">c8713bfd1b06ac1046224379b04bcb5f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="BitSight">c8713bfd1b06ac1046224379b04bcb5f</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c4a3e44e1b82205046224379b04bcbe0_data_source_en</sys_update_name>
+            <sys_updated_by>vxsrin2</sys_updated_by>
+            <sys_updated_on>2021-02-01 21:09:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
