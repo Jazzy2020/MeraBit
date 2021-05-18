@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="BS Open Ports Intg" max_length="40" name="x_usbna_bs_openport" sizeclass="0" type="collection">
+    <element extends="sys_import_set_row" label="BS Open Ports Intg" max_length="40" name="x_usbna_bs_openport" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=affects_rating" label="affects_rating" max_length="40" name="u_affects_rating" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=assets" label="assets" max_length="98" name="u_assets" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=asset_overrides" label="asset_overrides" max_length="40" name="u_asset_overrides" type="string"/>
